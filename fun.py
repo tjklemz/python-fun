@@ -10,6 +10,5 @@ for line in lines:
 
 grade_avg = total / len(lines)
 
-file = open('/Users/tjklemz/Desktop/results.txt', 'w')
-file.write(str(grade_avg))
-file.close()
+with open('/Users/tjklemz/Desktop/results.txt', 'w') as file:
+    file.write(str(grade_avg))
